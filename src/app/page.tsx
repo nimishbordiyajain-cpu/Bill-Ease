@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
 import {
-  DollarSign,
+  IndianRupee,
   PlusCircle,
   CalendarDays,
   ListFilter,
@@ -170,7 +170,7 @@ export default function Home() {
             <span className={cn(bill.isPaid && 'line-through')}>{bill.description}</span>
           </CardTitle>
           <span className="text-lg font-bold">
-            ${bill.amount.toFixed(2)}
+            ₹{bill.amount.toFixed(2)}
           </span>
         </CardHeader>
         <CardContent>
@@ -231,10 +231,10 @@ export default function Home() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Total Unpaid</CardTitle>
-              <DollarSign className="h-4 w-4 text-muted-foreground" />
+              <IndianRupee className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">${totalExpenses.toFixed(2)}</div>
+              <div className="text-2xl font-bold">₹{totalExpenses.toFixed(2)}</div>
             </CardContent>
           </Card>
           <Card>

@@ -47,7 +47,7 @@ export function SavingsTipsCard({ bills, spendingLimit, setSpendingLimit }: Savi
               Monthly Spending Limit
             </Label>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-medium">$</span>
+              <span className="text-sm font-medium">₹</span>
               <Input
                 id="spending-limit"
                 type="number"
